@@ -15,27 +15,12 @@ const CATEGORIES = [
     "name": "Film & Photography"
   },
   {
-    "id": "recordings",
-    "name": "Recordings"
-  },
-  {
     "id": "devices",
     "name": "Devices & Instruments"
   }
 ];
 
 const TOYS = [
-  {
-    "id": "sony-handycam-hdv-hdr-hc1-video-camera",
-    "accession": "2005.1.1",
-    "title": "Sony Handycam HDV HDR-HC1 Video Camera",
-    "category": "film",
-    "type": "Video Camera",
-    "year": "2005",
-    "maker": "Sony",
-    "model": "HDR-HC1",
-    "image": ""
-  },
   {
     "id": "mansfield-8mm-editor-model-950",
     "accession": "2026.2.1",
@@ -64,15 +49,6 @@ const TOYS = [
     "type": "Projector",
     "maker": "Keystone",
     "image": "images/moviegraph-hand-cranked-projector-head-silent-era-modified-2.jpg"
-  },
-  {
-    "id": "bell-and-howell-filmsound-specialist-16mm-model-542-projecto",
-    "accession": "2026.5.1",
-    "title": "Bell & Howell Filmsound Specialist 16mm Model 542 Projector",
-    "category": "film",
-    "maker": "Bell & Howell",
-    "model": "542.0",
-    "image": ""
   },
   {
     "id": "revere-2x2-35mm-still-slide-projector",
@@ -109,36 +85,6 @@ const TOYS = [
     "image": "images/paillard-bolex-h16-reflex-16mm-camera.jpg"
   },
   {
-    "id": "16mm-rewind-bench-with-two-c-clamps",
-    "accession": "2026-LOAN",
-    "title": "16mm rewind bench with two C-clamps",
-    "category": "film",
-    "parts": "3",
-    "image": ""
-  },
-  {
-    "id": "lucy-drawing-tool-camera-lucida",
-    "accession": "2025.4.4.1-6",
-    "title": "LUCY Drawing Tool Camera Lucida",
-    "category": "devices",
-    "type": "Optical device",
-    "year": "2022",
-    "maker": "LUCY",
-    "model": "Lucy Flex",
-    "origin": "USA",
-    "parts": "6",
-    "image": ""
-  },
-  {
-    "id": "kodak-brownie-8mm-projector",
-    "accession": "2014.1.1",
-    "title": "Kodak Brownie 8mm Projector",
-    "category": "film",
-    "maker": "Kodak",
-    "model": "Brownie 8",
-    "image": ""
-  },
-  {
     "id": "minette-8mm-viewer-editor",
     "accession": "2015.1.1",
     "title": "Minette 8mm Viewer/Editor",
@@ -157,22 +103,6 @@ const TOYS = [
     "maker": "Jeux Nathan",
     "origin": "France",
     "image": "images/jeux-nathan-rollyprint-rotary-printing-press-machine.jpg"
-  },
-  {
-    "id": "edison-wax-cylinder-recording-waikiki-hawai-ian-orchestra-sm",
-    "accession": "2021.3.3",
-    "title": "Edison Wax Cylinder Recording, Waikiki Hawai'ian Orchestra, \"Smiles, then Kisses--Waltz\"",
-    "category": "recordings",
-    "maker": "Edison National Phonograph Company",
-    "image": ""
-  },
-  {
-    "id": "edison-wax-cylinder-recording-lustspiel-overture-band",
-    "accession": "2021.3.4",
-    "title": "Edison Wax Cylinder Recording, Lustspiel Overture Band",
-    "category": "recordings",
-    "maker": "Edison National Phonograph Company",
-    "image": ""
   },
   {
     "id": "fisher-price-cassette-recorder-tape-player",
@@ -206,22 +136,6 @@ const TOYS = [
     "image": "images/tandy-deluxe-joystick.jpg"
   },
   {
-    "id": "bolex-8mm-super-8-glue-splicer",
-    "accession": "2025.3.1",
-    "title": "Bolex 8mm / Super 8 Glue Splicer",
-    "category": "film",
-    "maker": "Bolex",
-    "image": ""
-  },
-  {
-    "id": "bolex-16mm-glue-splicer",
-    "accession": "2025.3.2",
-    "title": "Bolex 16mm Glue Splicer",
-    "category": "film",
-    "maker": "Bolex",
-    "image": ""
-  },
-  {
     "id": "zoetrope",
     "accession": "2025.4.1",
     "title": "Zoetrope",
@@ -230,24 +144,6 @@ const TOYS = [
     "year": "2022-2024",
     "maker": "Brainstorm Toys",
     "image": "images/zoetrope.jpg"
-  },
-  {
-    "id": "bell-and-howell-ladies-filmo-field-model-16mm-cin-camera-in",
-    "accession": "2012.1.1a-b",
-    "title": "Bell & Howell \"Ladies'\" Filmo Field Model 16mm Ciné Camera in case",
-    "category": "film",
-    "maker": "Bell & Howell",
-    "model": "Filmo Field Model",
-    "image": ""
-  },
-  {
-    "id": "ampico-record-music-roll-the-lost-chord-player-piano-reel",
-    "accession": "2014.1.1",
-    "title": "Ampico Record Music Roll \"The Lost Chord\" Player Piano Reel",
-    "category": "recordings",
-    "year": "1917",
-    "maker": "Ampico / Rythmodik Music Corporation",
-    "image": ""
   },
   {
     "id": "atari-video-computer-system-console-and-ac-adapter",
@@ -260,18 +156,6 @@ const TOYS = [
     "model": "2600 (CX-2600)",
     "origin": "Taiwan",
     "image": "images/atari-video-computer-system-console-and-ac-adapter.jpg"
-  },
-  {
-    "id": "kodak-no-2a-brownie",
-    "accession": "2016.1.1",
-    "title": "Kodak No. 2A Brownie",
-    "category": "film",
-    "type": "Camera",
-    "year": "1907",
-    "maker": "Kodak",
-    "model": "2A",
-    "origin": "USA",
-    "image": ""
   },
   {
     "id": "ernst-plank-magic-lantern-slide-projector",
@@ -290,14 +174,6 @@ const TOYS = [
     "image": "images/tv-view-master.jpg"
   },
   {
-    "id": "atari-cartridge-storage-album",
-    "accession": "2021.3.2",
-    "title": "Atari Cartridge Storage \"Album\"",
-    "category": "games",
-    "maker": "Atari",
-    "image": ""
-  },
-  {
     "id": "sony-dvd-player-video-casette-recorder",
     "accession": "2021.4.1",
     "title": "Sony DVD Player / Video Casette Recorder",
@@ -309,72 +185,6 @@ const TOYS = [
     "image": "images/sony-dvd-player-video-casette-recorder.jpg"
   },
   {
-    "id": "iphone-1st-generation",
-    "accession": "2021.5.1",
-    "title": "iPhone (1st Generation)",
-    "category": "devices",
-    "year": "2007",
-    "maker": "Apple",
-    "model": "A1203",
-    "origin": "USA",
-    "image": ""
-  },
-  {
-    "id": "iphone-3gs",
-    "accession": "2021.5.2",
-    "title": "iPhone 3GS",
-    "category": "devices",
-    "year": "2009",
-    "maker": "Apple",
-    "model": "A1303",
-    "origin": "USA",
-    "image": ""
-  },
-  {
-    "id": "iphone-4s",
-    "accession": "2021.5.3",
-    "title": "iPhone 4S",
-    "category": "devices",
-    "year": "2011",
-    "maker": "Apple",
-    "model": "A1387",
-    "origin": "USA",
-    "image": ""
-  },
-  {
-    "id": "iphone-5",
-    "accession": "2021.5.4",
-    "title": "iPhone 5",
-    "category": "devices",
-    "year": "2012",
-    "maker": "Apple",
-    "model": "A1388",
-    "origin": "USA",
-    "image": ""
-  },
-  {
-    "id": "magnavox-mvr650-vhs-player-broken",
-    "accession": "2025.2.1",
-    "title": "Magnavox MVR650 VHS Player [BROKEN]",
-    "category": "devices",
-    "maker": "Magnavox",
-    "model": "MVR650",
-    "image": ""
-  },
-  {
-    "id": "makey-makey-in-box-with-usb-connector-and-alligator-clips",
-    "accession": "2025.4.3.1-6",
-    "title": "Makey-Makey in box with USB connector and Alligator Clips",
-    "category": "toys",
-    "type": "Educational Toy",
-    "year": "2015",
-    "maker": "Joylabz / Makey-Makey",
-    "model": "Classic",
-    "origin": "USA",
-    "parts": "6",
-    "image": ""
-  },
-  {
     "id": "mini-macintosh-american-girl-of-today-with-mousepad",
     "accession": "2025.5.1a-b",
     "title": "Mini Macintosh (American Girl of Today) with mousepad",
@@ -383,22 +193,6 @@ const TOYS = [
     "year": "1996",
     "maker": "Pleasant Company",
     "image": "images/mini-macintosh-american-girl-of-today-with-mousepad.jpg"
-  },
-  {
-    "id": "cir-16mm-guillotine-splicer-with-one-row-of-sprocket-punches",
-    "accession": "2026-LOAN",
-    "title": "CIR 16mm Guillotine Splicer with one row of sprocket punches",
-    "category": "film",
-    "maker": "CIR / Officine Meccaniche / Dr. Leo Catozzo",
-    "image": ""
-  },
-  {
-    "id": "cir-16mm-guillotine-splicer-with-two-rows-of-sprocket-punche",
-    "accession": "2026-LOAN",
-    "title": "CIR 16mm Guillotine Splicer with two rows of sprocket punches",
-    "category": "film",
-    "maker": "CIR / Officine Meccaniche / Dr. Leo Catozzo",
-    "image": ""
   },
   {
     "id": "telegraph-signal-learner-kit",
@@ -421,15 +215,6 @@ const TOYS = [
     "model": "MPF82E",
     "credit": "Gift of Yomi Braester",
     "image": "images/usb-portable-diskette-drive.jpg"
-  },
-  {
-    "id": "sanyo-cue-and-review-audio-casette-recorder-and-player",
-    "accession": "2026.4.2",
-    "title": "Sanyo Cue & Review Audio Casette Recorder and Player",
-    "category": "devices",
-    "maker": "Sanyo",
-    "model": "Cue & Review model m 1018",
-    "image": ""
   },
   {
     "id": "bell-and-howell-filmsound-specialist-model-552-16mm-projecto",
@@ -474,50 +259,6 @@ const TOYS = [
     "image": "images/sony-trinitron-crt-television.jpg"
   },
   {
-    "id": "atari-video-computer-system",
-    "accession": "2026.3.1.1",
-    "title": "Atari Video Computer System",
-    "category": "games",
-    "origin": "Taiwan",
-    "image": ""
-  },
-  {
-    "id": "atari-cx-40-controllers-2",
-    "accession": "2014.1.1.2-3",
-    "title": "Atari CX-40 controllers (2)",
-    "category": "games",
-    "image": ""
-  },
-  {
-    "id": "vectrex-arcade-system-controllers-2",
-    "accession": "2021.1.1.2-3",
-    "title": "Vectrex Arcade System Controllers (2)",
-    "category": "games",
-    "image": ""
-  },
-  {
-    "id": "vectrex-arcade-system-light-pen-1",
-    "accession": "2021.1.1.4",
-    "title": "Vectrex Arcade System Light Pen (1)",
-    "category": "games",
-    "image": ""
-  },
-  {
-    "id": "atari-compatible-extra-adapter",
-    "accession": "2021.6.1",
-    "title": "Atari-compatible extra adapter",
-    "category": "games",
-    "year": "ca 2020s",
-    "image": ""
-  },
-  {
-    "id": "atari-cx-40-controller-1",
-    "accession": "2021.6.2",
-    "title": "Atari CX-40 controller (1)",
-    "category": "games",
-    "image": ""
-  },
-  {
     "id": "keuffel-and-esser-transit-scope-and-compass-theodolite-in-wo",
     "accession": "2022.1.4",
     "title": "Keuffel & Esser Transit Scope and Compass (Theodolite) in Wooden Case",
@@ -526,14 +267,6 @@ const TOYS = [
     "model": "No. 5085CF",
     "credit": "Gift of Sudhir Mahadevan",
     "image": "images/keuffel-and-esser-transit-scope-and-compass-theodolite-in-wo.jpg"
-  },
-  {
-    "id": "atari-cx-40-controllers-2-2",
-    "accession": "2026.3.1.2-3",
-    "title": "Atari CX-40 controllers (2)",
-    "category": "games",
-    "parts": "2",
-    "image": ""
   },
   {
     "id": "hasbro-think-a-tron-toy-computer-150-punch-cards",
@@ -605,17 +338,6 @@ const TOYS = [
     "origin": "USA",
     "related": "Telegraph",
     "image": "images/western-union-telegraph-signal-set.jpg"
-  },
-  {
-    "id": "western-electric-push-button-desk-telephone",
-    "title": "Western Electric Push Button Desk Telephone",
-    "category": "devices",
-    "year": "1974",
-    "maker": "Western Electric",
-    "model": "2500DM",
-    "origin": "USA",
-    "related": "Telephone",
-    "image": ""
   },
   {
     "id": "star-castle",
@@ -706,139 +428,5 @@ const TOYS = [
     "year": "1982",
     "maker": "Vectrex (General Consumer Electronics)",
     "image": "images/armor-attack.jpg"
-  },
-  {
-    "id": "art-master",
-    "title": "Art Master",
-    "category": "games",
-    "type": "Cartridge",
-    "year": "1983",
-    "maker": "Vectrex (General Consumer Electronics)",
-    "image": ""
-  },
-  {
-    "id": "mine-storm",
-    "title": "Mine Storm",
-    "category": "games",
-    "type": "Cartridge",
-    "year": "1982",
-    "maker": "Vectrex (General Consumer Electronics)",
-    "image": ""
-  },
-  {
-    "id": "pac-man",
-    "title": "Pac-Man",
-    "category": "games",
-    "type": "Cartridge",
-    "year": "1981",
-    "maker": "Atari",
-    "image": ""
-  },
-  {
-    "id": "mario-bros",
-    "title": "Mario Bros",
-    "category": "games",
-    "type": "Cartridge",
-    "year": "1983",
-    "maker": "Nintendo (for Atari)",
-    "image": ""
-  },
-  {
-    "id": "night-driver",
-    "title": "Night Driver",
-    "category": "games",
-    "type": "Cartridge",
-    "year": "1978",
-    "maker": "Atari",
-    "image": ""
-  },
-  {
-    "id": "01-combat-tank-tank-pong-invisible-tank-bi-plane-jet-fighter",
-    "title": "01 Combat (Tank, Tank Pong, Invisible Tank, Bi Plane, Jet Fighter",
-    "category": "games",
-    "type": "Cartridge",
-    "year": "1980s",
-    "maker": "Atari",
-    "image": ""
-  },
-  {
-    "id": "dig-dug",
-    "title": "Dig Dug",
-    "category": "games",
-    "type": "Cartridge",
-    "year": "1987",
-    "maker": "Namco (for Atari)",
-    "image": ""
-  },
-  {
-    "id": "adventure",
-    "title": "Adventure",
-    "category": "games",
-    "type": "Cartridge",
-    "year": "1980",
-    "maker": "Atari",
-    "image": ""
-  },
-  {
-    "id": "video-olympics-pong-superpong-soccer-foozpong-hockey-quadrap",
-    "title": "Video Olympics (Pong/SuperPong, Soccer, FoozPong, Hockey, QuadraPong, Handball, Volleyball, Basketball)",
-    "category": "games",
-    "type": "Cartridge",
-    "year": "1980s",
-    "maker": "Atari",
-    "image": ""
-  },
-  {
-    "id": "the-star-wars-holiday-special",
-    "title": "The Star Wars Holiday Special",
-    "category": "recordings",
-    "type": "VHS",
-    "year": "ca 1990",
-    "credit": "Gift of Jill Housekeeper and Mark Rodgers",
-    "image": ""
-  },
-  {
-    "id": "double-happiness",
-    "title": "Double Happiness",
-    "category": "recordings",
-    "type": "VHS",
-    "year": "ca 1990",
-    "credit": "Gift of Jill Housekeeper and Mark Rodgers",
-    "image": ""
-  },
-  {
-    "id": "the-rustler-s-retreat-buzz-barton",
-    "title": "The Rustler's Retreat (Buzz Barton)",
-    "category": "recordings",
-    "type": "16mm film",
-    "year": "ca 1930",
-    "maker": "Novelty Film Co.",
-    "length": "2 min",
-    "description": "Excerpt from a longer film, but unclear which one",
-    "image": ""
-  },
-  {
-    "id": "the-lover-charlie-chaplin",
-    "title": "The Lover (Charlie Chaplin)",
-    "category": "recordings",
-    "type": "16mm film",
-    "year": "ca 1910s",
-    "maker": "Novelty Film Co.",
-    "director": "Charlie Chaplin",
-    "length": "2 min",
-    "description": "Excerpt from a longer film, but unclear which one",
-    "image": ""
-  },
-  {
-    "id": "keystone-kops-in-pursuit",
-    "title": "Keystone Kops In Pursuit",
-    "category": "recordings",
-    "type": "16mm film",
-    "year": "ca 1910s",
-    "maker": "Novelty Film Co.",
-    "director": "Mack Sennett",
-    "length": "2 min",
-    "description": "Excerpt from a longer film, but unclear which one",
-    "image": ""
   }
 ];

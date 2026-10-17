@@ -9,14 +9,14 @@ const index = sorted.findIndex((t) => t.id === id);
 const root = document.getElementById("item");
 
 if (index === -1) {
-  document.title = "Not found · Media Toy Lab";
-  root.innerHTML = `<p class="empty">Object not found. <a href="index.html">Back to the catalog</a>.</p>`;
+  document.title = "Not found · Media History Lab";
+  root.innerHTML = `<p class="empty">Object not found. <a href="index.html">Back to the collection</a>.</p>`;
 } else {
   const toy = sorted[index];
   const prev = sorted[(index - 1 + sorted.length) % sorted.length];
   const next = sorted[(index + 1) % sorted.length];
   const catLink = `<a href="index.html?category=${toy.category}">${escapeHtml(categoryName(toy.category))}</a>`;
-  document.title = `${toy.title} · Media Toy Lab`;
+  document.title = `${toy.title} · Media History Lab`;
 
   const fields = [
     ["Accession no.", toy.accession],
@@ -35,11 +35,11 @@ if (index === -1) {
   ].filter(([, v]) => v);
 
   root.innerHTML = `
-    <p class="breadcrumb"><a href="index.html">Catalog</a> / ${catLink}</p>
-    <article class="item cat-${toy.category}">
+    <p class="breadcrumb"><a href="index.html">Collection</a> / ${catLink}</p>
+    <article class="item">
       <div class="item-media">${toyImage(toy)}</div>
       <div class="item-body">
-        <span class="tag">${escapeHtml(categoryName(toy.category))}</span>
+        <span class="tag">${catMark(toy.category)}${escapeHtml(categoryName(toy.category))}</span>
         <h1 class="item-title">${escapeHtml(toy.title)}</h1>
         <dl class="item-fields">
           ${fields.map(([k, v]) => `<div><dt>${k}</dt><dd>${escapeHtml(v)}</dd></div>`).join("")}
@@ -48,7 +48,7 @@ if (index === -1) {
       </div>
     </article>
     <nav class="pager">
-      <a href="item.html?id=${encodeURIComponent(prev.id)}">← ${escapeHtml(prev.title)}</a>
-      <a href="item.html?id=${encodeURIComponent(next.id)}">${escapeHtml(next.title)} →</a>
+      <a href="item.html?id=${encodeURIComponent(prev.id)}"><span class="label">← Previous</span>${escapeHtml(prev.title)}</a>
+      <a href="item.html?id=${encodeURIComponent(next.id)}"><span class="label">Next →</span>${escapeHtml(next.title)}</a>
     </nav>`;
 }

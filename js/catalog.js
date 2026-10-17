@@ -43,8 +43,8 @@ function renderFilters() {
     CATEGORIES.map((c) => ({ ...c, count: TOYS.filter((t) => t.category === c.id).length }))
   );
   els.filters.innerHTML = all.map((c) => `
-    <button class="filter cat-${c.id}${c.id === state.category ? " is-active" : ""}" data-category="${c.id}">
-      ${escapeHtml(c.name)} <span class="filter-count">${c.count}</span>
+    <button class="filter${c.id === state.category ? " is-active" : ""}" data-category="${c.id}">
+      ${c.id === "all" ? "" : catMark(c.id)}${escapeHtml(c.name)} <span class="filter-count">${c.count}</span>
     </button>`).join("");
 }
 
@@ -55,10 +55,10 @@ function cardMeta(t) {
 function renderGrid(items) {
   return `<ul class="grid">${items.map((t) => `
     <li>
-      <a class="card cat-${t.category}" href="item.html?id=${encodeURIComponent(t.id)}">
+      <a class="card" href="item.html?id=${encodeURIComponent(t.id)}">
         <div class="card-media">${toyImage(t)}</div>
         <div class="card-body">
-          <span class="tag">${escapeHtml(categoryName(t.category))}</span>
+          <span class="tag">${catMark(t.category)}${escapeHtml(categoryName(t.category))}</span>
           <h3 class="card-title">${escapeHtml(t.title)}</h3>
           <p class="card-meta">${cardMeta(t)}</p>
         </div>
@@ -72,7 +72,7 @@ function renderGroupedGrid(items) {
     if (!group.length) return "";
     return `<section class="shelf shelf-${c.id}">
       <div class="shelf-head">
-        <h2>${escapeHtml(c.name)}</h2>
+        <h2>${catMark(c.id)}${escapeHtml(c.name)}</h2>
         <button class="shelf-link" data-category="${c.id}">See all ${group.length} →</button>
       </div>
       ${renderGrid(c.id === "toys" ? group : group.slice(0, 8))}
@@ -92,7 +92,7 @@ function renderIndex(items) {
       <ul class="index-list">${groups[letter].map((t) => `
         <li><a href="item.html?id=${encodeURIComponent(t.id)}">
           <span class="index-title">${escapeHtml(t.title)}</span>
-          <span class="index-meta"><span class="dot cat-${t.category}"></span>${escapeHtml(categoryName(t.category))}${t.year ? " · " + escapeHtml(t.year) : ""}</span>
+          <span class="index-meta">${catMark(t.category)}${escapeHtml(categoryName(t.category))}${t.year ? " · " + escapeHtml(t.year) : ""}</span>
         </a></li>`).join("")}
       </ul>
     </section>`).join("")}</div>`;

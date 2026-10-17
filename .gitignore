@@ -1,3 +1,6 @@
 # Source spreadsheet has internal fields (locations, owners, provenance) — keep it out of the public repo
 *.xlsx
 .DS_Store
+
+# Project writeup (source text for about.html)
+Media lab writeup.docx
