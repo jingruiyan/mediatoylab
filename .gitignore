@@ -1,0 +1,3 @@
+# Source spreadsheet has internal fields (locations, owners, provenance) — keep it out of the public repo
+*.xlsx
+.DS_Store
